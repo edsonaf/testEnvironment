@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace TestEnvironment.CompanyChallenges
+namespace TestEnvironment.CodeSignal.CompanyChallenges
 {
   public static class AsanaChallenges
   {

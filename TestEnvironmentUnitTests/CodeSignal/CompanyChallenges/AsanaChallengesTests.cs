@@ -1,7 +1,7 @@
 using NUnit.Framework;
-using TestEnvironment.CompanyChallenges;
+using TestEnvironment.CodeSignal.CompanyChallenges;
 
-namespace TestEnvironmentUnitTests.CompanyChallenges
+namespace TestEnvironmentUnitTests.CodeSignal.CompanyChallenges
 {
   [TestFixture]
   [Timeout(3000)]

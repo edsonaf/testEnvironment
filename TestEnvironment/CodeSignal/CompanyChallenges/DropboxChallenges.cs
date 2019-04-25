@@ -1,6 +1,6 @@
 using System;
 
-namespace TestEnvironment.CompanyChallenges
+namespace TestEnvironment.CodeSignal.CompanyChallenges
 {
   public static class DropboxChallenges
   {

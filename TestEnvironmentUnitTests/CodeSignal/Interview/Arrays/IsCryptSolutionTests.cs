@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace TestEnvironmentUnitTests.Interview.Arrays
+namespace TestEnvironmentUnitTests.CodeSignal.Interview.Arrays
 {
   [TestFixture]
   public class IsCryptSolutionTests
@@ -21,7 +21,7 @@ namespace TestEnvironmentUnitTests.Interview.Arrays
         new[] {'S', '9'}
       };
 
-      var isCryptSolution = TestEnvironment.Interview.Arrays.IsCryptSolution(crypt, solution);
+      var isCryptSolution = TestEnvironment.CodeSignal.Interview.Arrays.IsCryptSolution(crypt, solution);
 
       Assert.IsTrue(isCryptSolution);
     }
@@ -37,7 +37,7 @@ namespace TestEnvironmentUnitTests.Interview.Arrays
         new[] {'C', '3'},
       };
 
-      var isCryptSolution = TestEnvironment.Interview.Arrays.IsCryptSolution(crypt, solution);
+      var isCryptSolution = TestEnvironment.CodeSignal.Interview.Arrays.IsCryptSolution(crypt, solution);
 
       Assert.IsTrue(isCryptSolution);
     }
@@ -60,7 +60,7 @@ namespace TestEnvironmentUnitTests.Interview.Arrays
         new[] {'P', '9'},
       };
 
-      var isCryptSolution = TestEnvironment.Interview.Arrays.IsCryptSolution(crypt, solution);
+      var isCryptSolution = TestEnvironment.CodeSignal.Interview.Arrays.IsCryptSolution(crypt, solution);
 
       Assert.IsFalse(isCryptSolution);
     }

@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
+using TestEnvironment.CodeSignal.Interview;
 
-namespace TestEnvironmentUnitTests.Interview
+namespace TestEnvironmentUnitTests.CodeSignal.Interview
 {
   [TestFixture]
   public class CommonTechniquesBasicTests
@@ -17,7 +18,7 @@ namespace TestEnvironmentUnitTests.Interview
 
       int expectedOutput = 10;
 
-      var output = TestEnvironment.Interview.CommonTechniquesBasic.SumInRange(nums, queries);
+      var output = CommonTechniquesBasic.SumInRange(nums, queries);
 
       Assert.AreEqual(expectedOutput, output);
     }

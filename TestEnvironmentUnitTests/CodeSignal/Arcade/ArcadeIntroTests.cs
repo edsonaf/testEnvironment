@@ -1,7 +1,7 @@
 using NUnit.Framework;
-using TestEnvironment.Arcade;
+using TestEnvironment.CodeSignal.Arcade;
 
-namespace TestEnvironmentUnitTests.Arcade
+namespace TestEnvironmentUnitTests.CodeSignal.Arcade
 {
   [TestFixture]
   [Timeout(3000)]
@@ -406,10 +406,12 @@ namespace TestEnvironmentUnitTests.Arcade
 
 
     [Test]
-    [TestCase(new object[] {"aba", "bbb", "bab"}, ExpectedResult = false, TestName = "StringsRearrangementTest01")]
-    public bool StringsRearrangementTest(string[] inputArray)
+    public void StringsRearrangementTest()
     {
-      return ArcadeIntro.StringsRearrangement(inputArray);
+      string[] inputArray = {"aba", "bbb", "bab"};
+      var result = ArcadeIntro.StringsRearrangement(inputArray);
+
+      Assert.AreEqual(false, result);
     }
 
 

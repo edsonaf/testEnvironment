@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace TestEnvironment.CompanyChallenges.VerkadaChallenges
+namespace TestEnvironment.CodeSignal.CompanyChallenges.VerkadaChallenges
 {
   public static class VerkadaAnalyzeIpAddresses
   {

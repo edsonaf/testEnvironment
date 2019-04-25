@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace TestEnvironmentUnitTests.Interview.Arrays
+namespace TestEnvironmentUnitTests.CodeSignal.Interview.Arrays
 {
   [TestFixture]
   [Timeout(3000)]
@@ -15,7 +15,7 @@ namespace TestEnvironmentUnitTests.Interview.Arrays
         new[] {4, 5, 6},
         new[] {7, 8, 9}
       };
-      int[][] rotateImage = TestEnvironment.Interview.Arrays.RotateImage(a);
+      int[][] rotateImage = TestEnvironment.CodeSignal.Interview.Arrays.RotateImage(a);
 
 
       int[][] expected =
@@ -44,7 +44,7 @@ namespace TestEnvironmentUnitTests.Interview.Arrays
         new[] {8, 46, 20, 21, 35, 4, 36, 18, 32, 3},
       };
 
-      int[][] rotateImage = TestEnvironment.Interview.Arrays.RotateImage(a);
+      int[][] rotateImage = TestEnvironment.CodeSignal.Interview.Arrays.RotateImage(a);
 
       int[][] expected =
       {

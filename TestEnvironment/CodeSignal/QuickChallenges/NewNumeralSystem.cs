@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace TestEnvironment.QuickChallenges
+namespace TestEnvironment.CodeSignal.QuickChallenges
 {
   /// <summary>
   /// Your Informatics teacher at school likes coming up with new ways to help you understand the material. When you

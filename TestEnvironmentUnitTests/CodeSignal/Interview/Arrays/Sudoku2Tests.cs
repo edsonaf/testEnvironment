@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace TestEnvironmentUnitTests.Interview.Arrays
+namespace TestEnvironmentUnitTests.CodeSignal.Interview.Arrays
 {
   [TestFixture]
   public class Sudoku2Tests
@@ -23,7 +23,7 @@ namespace TestEnvironmentUnitTests.Interview.Arrays
         new[] {'.', '.', '.', '5', '.', '.', '.', '7', '.'}
       };
 
-      bool isSudokuCompliant = TestEnvironment.Interview.Arrays.Sudoku2(grid);
+      bool isSudokuCompliant = TestEnvironment.CodeSignal.Interview.Arrays.Sudoku2(grid);
       Assert.True(isSudokuCompliant);
     }
 
@@ -44,7 +44,7 @@ namespace TestEnvironmentUnitTests.Interview.Arrays
       };
 
 
-      bool isSudokuCompliant = TestEnvironment.Interview.Arrays.Sudoku2(grid);
+      bool isSudokuCompliant = TestEnvironment.CodeSignal.Interview.Arrays.Sudoku2(grid);
       Assert.IsTrue(isSudokuCompliant);
     }
   }

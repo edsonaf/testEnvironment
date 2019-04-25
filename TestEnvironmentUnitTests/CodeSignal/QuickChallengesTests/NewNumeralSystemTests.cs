@@ -1,7 +1,7 @@
 using NUnit.Framework;
-using TestEnvironment.QuickChallenges;
+using TestEnvironment.CodeSignal.QuickChallenges;
 
-namespace TestEnvironmentUnitTests.QuickChallengesTests
+namespace TestEnvironmentUnitTests.CodeSignal.QuickChallengesTests
 {
   [TestFixture]
   [Timeout(3000)]

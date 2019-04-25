@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace TestEnvironment.CompanyChallenges.VerkadaChallenges
+namespace TestEnvironment.CodeSignal.CompanyChallenges.VerkadaChallenges
 {
   /// <assignment>
   /// You work at an electronics shop, and you've just received a shipment containing new models of Verkada security

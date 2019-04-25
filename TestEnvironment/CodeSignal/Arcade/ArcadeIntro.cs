@@ -1,13 +1,8 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
-using System.Net;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Text.RegularExpressions;
 
-namespace TestEnvironment.Arcade
+namespace TestEnvironment.CodeSignal.Arcade
 {
   public static class ArcadeIntro
   {
@@ -291,7 +286,7 @@ namespace TestEnvironment.Arcade
       IEnumerable<IGrouping<char, char>> enumerable = @by.Where(g => g.Count() % 2 == 1);
       int count = 0;
       var cs = enumerable.ToList();
-      foreach (var c in cs) count++;
+      foreach (var unused in cs) count++;
       return count == 1 && @by.Where(grouped => grouped.Key != cs.First().Key)
                .All(grouped => grouped.Count() % 2 == 0);
     }
@@ -865,7 +860,6 @@ namespace TestEnvironment.Arcade
 
     #region Eruption of Light 
 
-
     /// <summary>
     /// A string is said to be beautiful if each letter of the alphabet appears at most as many times as than the
     /// previous letter; ie: b occurs no more times than a; c occurs no more times than b; etc.
@@ -876,11 +870,21 @@ namespace TestEnvironment.Arcade
     /// <returns></returns>
     public static bool IsBeautifulString(string inputString)
     {
-      
-      return false;
+      int[] a2z = new int[26];
+      foreach (char c in inputString)
+      {
+        int j = Convert.ToInt32(c) - 97;
+        a2z[j]++;
+      }
+
+      for (int i = 0; i < 25; i++)
+      {
+        if (a2z[i] < a2z[i + 1]) return false;
+      }
+
+      return true;
     }
-    
-    
+
     #endregion
 
     #region Rainbow of Clarity 

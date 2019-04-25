@@ -1,7 +1,7 @@
 using NUnit.Framework;
-using TestEnvironment.Arcade;
+using TestEnvironment.CodeSignal.Arcade;
 
-namespace TestEnvironmentUnitTests.Arcade
+namespace TestEnvironmentUnitTests.CodeSignal.Arcade
 {
   [TestFixture]
   [Timeout(3000)]

@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace TestEnvironmentUnitTests.Interview
+namespace TestEnvironmentUnitTests.CodeSignal.Interview
 {
   [TestFixture]
   [Timeout(3000)]
@@ -11,7 +11,7 @@ namespace TestEnvironmentUnitTests.Interview
     [TestCase(new[] {1}, ExpectedResult = -1)]
     public int FirstDuplicateTest(int[] a)
     {
-      return TestEnvironment.Interview.Arrays.FirstDuplicate(a);
+      return TestEnvironment.CodeSignal.Interview.Arrays.FirstDuplicate(a);
     }
 
     [TestCase("abacabd", ExpectedResult = 'c', TestName = "Test 01")]
@@ -23,7 +23,7 @@ namespace TestEnvironmentUnitTests.Interview
     [TestCase("ngrhhqbhnsipkcoqjyviikvxbxyphsnjpdxkhtadltsuxbfbrkof", ExpectedResult = 'g', TestName = "Test 10")]
     public char FirstNotRepeatingCharacterTest(string s)
     {
-      return TestEnvironment.Interview.Arrays.FirstNotRepeatingCharacter(s);
+      return TestEnvironment.CodeSignal.Interview.Arrays.FirstNotRepeatingCharacter(s);
     }
   }
 }

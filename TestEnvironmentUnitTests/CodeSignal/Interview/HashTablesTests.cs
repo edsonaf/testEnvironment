@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
+using TestEnvironment.CodeSignal.Interview;
 
-namespace TestEnvironmentUnitTests.Interview
+namespace TestEnvironmentUnitTests.CodeSignal.Interview
 {
   [TestFixture]
   public class HashTablesTests
@@ -24,7 +25,7 @@ namespace TestEnvironmentUnitTests.Interview
         new[] {"Tomato", "Pizza", "Salad", "Sandwich"}
       };
 
-      string[][] output = TestEnvironment.Interview.HashTables.GroupingDishes(dishes);
+      string[][] output = HashTables.GroupingDishes(dishes);
     }
   }
 }

@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace TestEnvironment.Arcade
+namespace TestEnvironment.CodeSignal.Arcade
 {
   public static class ArcadeCore
   {
@@ -296,8 +296,8 @@ namespace TestEnvironment.Arcade
       {
         string binaryString = Convert.ToString(i, 2).PadLeft(4, '0');
         count += binaryString.GroupBy(c => c)
-                             .Select(c => new {Char = c.Key, Count = c.Count()})
-                             .Where(v => v.Char == '1').Sum(v => v.Count);
+          .Select(c => new {Char = c.Key, Count = c.Count()})
+          .Where(v => v.Char == '1').Sum(v => v.Count);
       }
 
       return count;
@@ -315,8 +315,8 @@ namespace TestEnvironment.Arcade
       string reverse = new string(Convert.ToString(a, 2).Reverse().ToArray());
       return Convert.ToInt32(reverse, 2);
     }
-    
-    
+
+
     /// <summary>
     /// Presented with the integer n, find the 0-based position of the second rightmost zero bit in its binary
     /// representation (it is guaranteed that such a bit exists), counting from right to left.
@@ -333,7 +333,6 @@ namespace TestEnvironment.Arcade
       return n;
     }
 
-    
     #endregion
   }
 }

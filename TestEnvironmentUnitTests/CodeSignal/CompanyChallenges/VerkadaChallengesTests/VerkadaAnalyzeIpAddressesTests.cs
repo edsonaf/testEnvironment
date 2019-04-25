@@ -1,9 +1,9 @@
 using System.IO;
 using System.Reflection;
 using NUnit.Framework;
-using TestEnvironment.CompanyChallenges.VerkadaChallenges;
+using TestEnvironment.CodeSignal.CompanyChallenges.VerkadaChallenges;
 
-namespace TestEnvironmentUnitTests.CompanyChallenges.VerkadaChallengesTests
+namespace TestEnvironmentUnitTests.CodeSignal.CompanyChallenges.VerkadaChallengesTests
 {
   [TestFixture]
   [Timeout(3000)]

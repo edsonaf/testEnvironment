@@ -1,4 +1,4 @@
-namespace TestEnvironment.QuickChallenges
+namespace TestEnvironment.CodeSignal.QuickChallenges
 {
   public static class BankRequestChallenge
   {

@@ -1,6 +1,4 @@
 ﻿using NUnit.Framework;
-using NUnit.Framework.Interfaces;
-using NUnit.Framework.Internal;
 using TestEnvironment.CodeWars;
 
 namespace TestEnvironmentUnitTests.CodeWars
@@ -25,6 +23,16 @@ namespace TestEnvironmentUnitTests.CodeWars
     public int GetSumTest(int a, int b)
     {
       return CodeWarsMain.GetSum(a, b);
+    }
+
+    [TestCase("()", ExpectedResult = true, TestName = "ValidBracesTest01")]
+    [TestCase("[(])", ExpectedResult = false, TestName = "ValidBracesTest02")]
+    [TestCase("(){}[]", ExpectedResult = true, TestName = "ValidBracesTest03")]
+    [TestCase("([{}])", ExpectedResult = true, TestName = "ValidBracesTest04")]
+    [TestCase("[({})](]", ExpectedResult = false, TestName = "ValidBracesTest05")]
+    public bool ValidBracesTest(string braces)
+    {
+      return CodeWarsMain.ValidBraces(braces);
     }
   }
 }

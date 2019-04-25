@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace TestEnvironment.CodeWars
 {
@@ -91,5 +90,41 @@ namespace TestEnvironment.CodeWars
 //        .Select(c => "abcdefghijklmnopqrstuvwxyz".IndexOf(c) + 1)
 //        .ToArray());
     }
+
+    /// <summary>
+    /// Write a function that takes a string of braces, and determines if the order of the
+    /// braces is valid. It should return true if the string is valid, and false if it's
+    /// invalid.
+    /// A string of braces is considered valid if all braces are matched with the correct
+    /// brace.
+    /// </summary>
+    /// <param name="braces">All input strings will be nonempty, and will only consist of
+    /// parentheses, brackets and curly braces: ()[]{}. </param>
+    /// <returns></returns>
+    public static bool ValidBraces(String braces)
+    {
+      Stack<char> stack = new Stack<char>();
+      foreach (char c in braces)
+      {
+        if (stack.Count > 0 && _bracesMap.ContainsKey(stack.Peek()) &&
+            _bracesMap[stack.Peek()] == c)
+        {
+          stack.Pop();
+        }
+        else
+        {
+          stack.Push(c);
+        }
+      }
+
+      return stack.Count == 0;
+    }
+
+    private static readonly IDictionary<char, char> _bracesMap = new Dictionary<char, char>()
+    {
+      {'(', ')'},
+      {'{', '}'},
+      {'[', ']'}
+    };
   }
 }

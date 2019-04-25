@@ -1,8 +1,7 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace TestEnvironment.Interview
+namespace TestEnvironment.CodeSignal.Interview
 {
   public static class LinkedLists
   {

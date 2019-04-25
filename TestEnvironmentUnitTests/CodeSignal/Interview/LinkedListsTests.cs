@@ -1,7 +1,7 @@
 using NUnit.Framework;
-using TestEnvironment.Interview;
+using TestEnvironment.CodeSignal.Interview;
 
-namespace TestEnvironmentUnitTests.Interview
+namespace TestEnvironmentUnitTests.CodeSignal.Interview
 {
   [TestFixture]
   [Timeout(3000)]

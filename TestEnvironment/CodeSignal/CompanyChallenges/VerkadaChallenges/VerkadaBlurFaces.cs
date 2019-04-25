@@ -1,7 +1,6 @@
-using System;
 using System.Linq;
 
-namespace TestEnvironment.CompanyChallenges.VerkadaChallenges
+namespace TestEnvironment.CodeSignal.CompanyChallenges.VerkadaChallenges
 {
   /// <assignment>
   /// Your Verkada security camera has captured a funny video of a hummingbird. You'd like to post the clip on your

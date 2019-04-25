@@ -1,4 +1,4 @@
-﻿namespace TestEnvironment.Interview
+﻿namespace TestEnvironment.CodeSignal.Interview
 {
   public static class CommonTechniquesBasic
   {
