@@ -100,5 +100,15 @@ namespace TestEnvironmentUnitTests
       var main = new Main();
       return main.SpecialPolynomial(x, n);
     }
+
+    [Test]
+    [TestCase(1, 5, ExpectedResult = 5, TestName = "PagesNumberingWithInkTest01")]
+    [TestCase(21, 5, ExpectedResult = 22, TestName = "PagesNumberingWithInkTest02")]
+    [TestCase(10, 3, ExpectedResult = 10, TestName = "PagesNumberingWithInkTest05")]
+    public int PagesNumberingWithInkTest(int current, int numberOfDigits)
+    {
+      var main = new Main();
+      return main.PagesNumberingWithInk(current, numberOfDigits);
+    }
   }
 }

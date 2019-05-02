@@ -128,5 +128,36 @@ namespace TestEnvironment
 
       return currentK - 1;
     }
-  }
+
+        /// <summary>
+        /// You work in a company that prints and publishes books. You are responsible
+        /// for designing the page numbering mechanism in the printer. You know how many
+        /// digits a printer can print with the leftover ink. Now you want to write a
+        /// function to determine what the last page of the book is that you can number
+        /// given the current page and numberOfDigits left. A page is considered numbered
+        /// if it has the full number printed on it (e.g. if we are working with page 102
+        /// but have ink only for two digits then this page will not be considered numbered).
+        /// 
+        /// It's guaranteed that you can number the current page, and that you can't number
+        /// the last one in the book.
+        /// For current = 1 and numberOfDigits = 5, the output should be
+        /// pagesNumberingWithInk(current, numberOfDigits) = 5.
+        /// </summary>
+        /// <param name="current"></param>
+        /// <param name="numberOfDigits"></param>
+        /// <returns></returns>
+        public int PagesNumberingWithInk(int current, int numberOfDigits)
+    {
+        int result = current - 1;
+        while (current.ToString().Length <= numberOfDigits)
+        {
+            result++;
+            current++;
+            numberOfDigits -= result.ToString().Length;
+        }
+
+        return result;
+    }
+
+    }
 }
